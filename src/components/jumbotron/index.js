@@ -3,8 +3,8 @@ import { Item, Container, Inner, Pane, Title, SubTitle, Image } from './styles/j
 
 export default function Jumbotron({ children, direction = 'row', ...restProps }) {
     return (
-        <Item>
-            <Inner direction={direction}>
+        <Item {...restProps}>
+            <Inner direction={direction} >
                 {children}
             </Inner>
         </Item>
