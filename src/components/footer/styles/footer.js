@@ -16,17 +16,15 @@ export const Column = styled.div`
     display: flex;
     flex-direction:column;
     text-align:left;
-    background-color: antiquewhite;
 `;
 
 export const Row = styled.div`
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     grid-gap:15px;
-    background-color: saddlebrown;
 
     @media (max-width: 1000px){
-        grid-template-columns:repeat(auto-fill,mixmax(150px, 1fr));
+        grid-template-columns:repeat(auto-fill, minmax(150px, 1fr));
     }
 `;
 
