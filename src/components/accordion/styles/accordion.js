@@ -25,14 +25,12 @@ export const Title = styled.h1`
     }
 `;
 
-export const Frame = styled.div`
-    margin-bottom: 40px;
-`;
-
 export const Item = styled.div`
     color: white;
     margin-bottom: 10px;
-    max-width: 815px;
+    max-width: 670px;
+    margin: auto;
+    width: 100%;
 
     &:first-of-type{
         margin-top: 3em;
@@ -46,7 +44,7 @@ export const Header = styled.div`
     font-size: 26px;
     font-weight: normal;
     background: #303030;
-    padding: 0.8em 1.2em;
+    padding: 0.6em 1.2em;
     user-select: none;
     align-items: center;
 
