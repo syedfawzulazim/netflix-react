@@ -8,10 +8,18 @@ export const Container = styled.div`
     flex-wrap:wrap;
     width: 100%;
 
+
     @media (max-width: 1000px){
         flex-direction: column;
         align-items: center;
     }
+
+    @media (min-width: 1304px){
+        max-width: 815px;
+        align-self: center;
+    }
+    
+   
 `;
 
 export const Input = styled.input`
