@@ -5,6 +5,7 @@ import { FooterContainer } from '../containers/footer';
 import { HeaderContainer } from '../containers/header';
 import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
+import 'firebase/auth';
 
 export default function Signup() {
     const history = useHistory();
@@ -22,12 +23,10 @@ export default function Signup() {
     const handleSignIn = (event) => {
         event.preventDefault();
 
-        return firebase
-            .auth()
-            .signInWithEmailAndPassword(emailAddress, password)
-            .then(() => {
-                history.push(ROUTES.BROWSE);
-            })
+
+        firebase.auth().signInWithEmailAndPassword(emailAddress, password).then(() => {
+            history.push(ROUTES.BROWSE);
+        })
             .catch((error) => {
                 setEmailAddress('');
                 setPassword('');
