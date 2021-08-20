@@ -5,7 +5,6 @@ import { FooterContainer } from '../containers/footer';
 import { HeaderContainer } from '../containers/header';
 import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
-import 'firebase/auth';
 
 export default function Signup() {
     const history = useHistory();
