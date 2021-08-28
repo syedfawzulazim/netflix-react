@@ -18,6 +18,12 @@ export default function Signup() {
     //validation of inputs
     const isInvalid = password === '' || emailAddress === '';
 
+    //Demo Sign In
+
+    const demoSignIn = () => {
+        setEmailAddress('demo@gmail.com');
+        setPassword('123123');
+    }
 
     const handleSignIn = (event) => {
         event.preventDefault();
@@ -58,6 +64,10 @@ export default function Signup() {
                             Sign In
                         </Form.Submit>
                     </Form.Base>
+
+                    <Form.Submit onClick={demoSignIn} >
+                        Demo Sign In
+                    </Form.Submit>
 
                     <Form.Text>
                         New to Netflix? <Form.Link to={ROUTES.SIGN_UP}>Sign up now.</Form.Link>
