@@ -1,6 +1,11 @@
 ## Netflix-React
 Netflix developed in React using react hooks, styled components, Firebase, firestore, and fuse.js( lightweight fuzzy-search library) for live searching.
-
+## Ingredients: 
+  - React
+  - Firebase
+  - Firestore
+  - Fuse.js( lightweight fuzzy-search library)
+  - Styled components
 ### Project's Screen Shots: 
 ![11](https://user-images.githubusercontent.com/37554815/157349600-5efd673e-d6bc-4590-8f7e-51561f184483.JPG)
 ![12](https://user-images.githubusercontent.com/37554815/157349605-da5aa506-da50-4e48-b56a-eab733f6613b.JPG)
